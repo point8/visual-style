@@ -1,0 +1,71 @@
+#### MATPLOTLIBRC
+
+See explanation and all configurable options at https://matplotlib.org/users/customizing.html#the-matplotlibrc-file
+
+## FIGURE
+figure.figsize:     7.281, 4.5  # figure size in inches (8, 4.5) - (7, 6)
+figure.dpi:         200       # figure dots per inch
+
+
+## COLORS
+# xgfs fancy colors in different order (http://tsitsul.in/blog/coloropt/)
+axes.prop_cycle: cycler('color', ['00678a', 'e6a176', '984464', '5eccab', 'cdcdcd', 'c0affb', '56641a'])
+
+
+## AXES
+axes.edgecolor:     032E43   # axes edge color
+axes.titleweight:   bold  # font weight of title
+axes.labelsize:     12  # font size of the x and y labels
+axes.labelweight:   medium  # weight of the x and y labels
+axes.labelcolor:    032E43
+axes.titlelocation: center  # alignment of the title: {left, right, center}
+axes.axisbelow:     True    # draw axis gridlines and ticks:
+                             #     - below patches (True)
+                             #     - above patches but below lines ('line')
+                             #     - above all (False)
+
+## GRID
+axes.grid:      True    # display grid or not
+grid.alpha:     0.3     # transparency, between 0.0 and 1.0
+
+
+## DATE
+## 'auto', 'concise':
+date.converter:                  concise
+
+
+## LEGEND
+#legend.fontsize:      medium
+#legend.labelcolor:    None
+#legend.title_fontsize: None    # None sets to the same as the default axes.
+legend.frameon:       True     # if True, draw the legend on a background patch
+legend.framealpha:    0.8      # legend patch transparency
+#legend.facecolor:     inherit  # inherit from axes.facecolor; or color spec
+legend.edgecolor:     0.2      # background patch boundary color
+#legend.fancybox:      True     # if True, use a rounded box for the
+                                # legend background, else a rectangle
+
+## FONT
+font.sans-serif: Fira Sans, DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
+
+
+## TEXT
+text.color: 032E43
+
+
+## TICKS
+xtick.color:         032E43   # color of the ticks
+ytick.color:         032E43   # color of the ticks
+xtick.bottom:        True    # draw ticks on the bottom side
+ytick.left:          True    # draw ticks on the left side
+
+
+## LINES
+lines.markersize:    4           # marker size, in points, markersize**2 is default for scatter points
+
+
+## SAVEFIG
+savefig.bbox:      tight    # {tight, standard}
+                                # 'tight' is incompatible with pipe-based animation
+                                # backends (e.g. 'ffmpeg') but will work with those
+                                # based on temporary files (e.g. 'ffmpeg_file')
