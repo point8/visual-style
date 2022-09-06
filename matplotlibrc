@@ -1,6 +1,6 @@
 #### MATPLOTLIBRC
 
-See explanation and all configurable options at https://matplotlib.org/users/customizing.html#the-matplotlibrc-file
+# See explanation and all configurable options at https://matplotlib.org/users/customizing.html#the-matplotlibrc-file
 
 ## FIGURE
 figure.figsize:     7.281, 4.5  # figure size in inches (8, 4.5) - (7, 6)
