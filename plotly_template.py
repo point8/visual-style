@@ -15,7 +15,6 @@ import plotly.io as pio
 
 GRID_COLOR = "rgba(0, 0, 0, 0.1)"
 LINE_COLOR = "#032E43"
-ZERO_LINE_COLOR = LINE_COLOR
 
 pio.templates["p8_template"] = go.layout.Template(
     layout=go.Layout(
@@ -119,7 +118,7 @@ pio.templates["p8_template"] = go.layout.Template(
                     "showline": True,
                     "ticks": "outside",
                     "zeroline": False,
-                    "zerolinecolor": ZERO_LINE_COLOR,
+                    "zerolinecolor": LINE_COLOR,
                 },
                 "yaxis": {
                     "backgroundcolor": "white",
@@ -131,7 +130,7 @@ pio.templates["p8_template"] = go.layout.Template(
                     "showline": True,
                     "ticks": "outside",
                     "zeroline": False,
-                    "zerolinecolor": ZERO_LINE_COLOR,
+                    "zerolinecolor": LINE_COLOR,
                 },
                 "zaxis": {
                     "backgroundcolor": "white",
@@ -143,7 +142,7 @@ pio.templates["p8_template"] = go.layout.Template(
                     "showline": True,
                     "ticks": "outside",
                     "zeroline": False,
-                    "zerolinecolor": ZERO_LINE_COLOR,
+                    "zerolinecolor": LINE_COLOR,
                 },
             },
             "shapedefaults": {
@@ -188,7 +187,7 @@ pio.templates["p8_template"] = go.layout.Template(
                 "tickfont": {"size": 12},  # custom
                 "title": {"standoff": 15},
                 "zeroline": False,
-                "zerolinecolor": ZERO_LINE_COLOR,
+                "zerolinecolor": LINE_COLOR,
             },
             "yaxis": {
                 "automargin": True,
@@ -201,7 +200,7 @@ pio.templates["p8_template"] = go.layout.Template(
                 "tickfont": {"size": 12},  # custom
                 "title": {"standoff": 15},
                 "zeroline": False,
-                "zerolinecolor": ZERO_LINE_COLOR,
+                "zerolinecolor": LINE_COLOR,
             },
         }
     )
