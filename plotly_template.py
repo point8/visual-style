@@ -4,10 +4,7 @@ This template is based on "simple_white" from plotly. Changes are marked with #c
 
 Then add the following lines to your files:
 
-import plotly.io as pio
 import plotly_template # adapt path to module
-
-pio.templates.default = "p8_template"
 """
 
 import plotly.graph_objects as go
@@ -205,3 +202,5 @@ pio.templates["p8_template"] = go.layout.Template(
         }
     )
 )
+
+pio.templates.default = "p8_template"
